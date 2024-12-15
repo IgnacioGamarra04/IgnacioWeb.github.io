@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ignacio Web</title>
+    <style>
+        :root {
+            --primary-purple: #2D2640;
+            --primary-pink: #FF69B4;
+            --primary-mint: #00FFB2;
+            --text-blue: #7EC8E3;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: monospace;
+        }
+
+        body {
+            background-color: var(--primary-purple);
+            color: white;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 8rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .avatar {
+            width: 130px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        .nav-menu {
+            list-style: none;
+            text-align: center;
+        }
+
+        .nav-menu li {
+            margin: 1rem 0;
+        }
+
+        .nav-menu a {
+            color: #B8B8B8;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+        }
+        .ignacio{
+            cursor: pointer;
+        }
+
+        .country {
+            cursor: pointer;
+        }
+
+        .junior {
+            cursor: pointer;
+        }
+
+        .conocimiento{
+            cursor: pointer;
+        }
+        .nav-menu a:hover {
+            color: white;
+        }
+
+        .main-content {
+            padding: 10rem;
+            flex-grow: 1;
+        }
+
+        .name {
+            font-size: 9rem;
+            margin-bottom: 2rem;
+        }
+
+        .name-ignacio {
+            color: var(--primary-mint);
+        }
+
+        .name-gamarra {
+            color: var(--primary-mint);
+        }
+
+        .welcome-text {
+            color: var(--text-blue);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-text {
+            color: #B8B8B8;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .contact-text a {
+            color: var(--primary-mint);
+            text-decoration: none;
+        }
+
+        .cv-button {
+            background-color: var(--primary-mint);
+            color: black;
+            padding: .5rem 1.5rem;
+            border:  black;
+            border-radius: 400px;
+            cursor: pointer;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .social-icon {
+            width: 40PX;
+            height: 20px;
+            background-color: var(--text-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            font-size: 2rem;
+            margin-top: 2rem;
+        }
+
+        .social-icon a {
+            color: white;
+            text-decoration: none;
+        }
+
+        @media (max-width: 780px) {
+            body {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                padding: 1rem;
+            }
+
+            .main-content {
+                padding: 2rem;
+            }
+
+            .name {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <aside class="sidebar">
+        <img src="yo.png" alt="Avatar" class="avatar">
+        <nav>
+            <ul class="nav-menu">
+                <li><a class="ignacio">IGNACIO
+                    GAMARRA
+                </a></li>
+                <li><a class="country">Argentina</a></li>
+                <li><a class="junior">Developer junior</a></li>
+                <li><a class="conocimiento">HTML, CSS,
+                    JAVASCRIPT
+                </a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <h1 class="name">
+            <span class="name-ignacio">IGNACIO</span> 
+            <span class="name-gamarra">GAMARRA</span>
+        </h1>
+        
+        <p class="welcome-text">WELCOME.</p>
+        
+        <p class="contact-text">
+            CONTACT WITH ME 
+            <a href="mailto:ignaciogamarra004@gmail.com">ignaciogamarra004@gmail.com</a>
+        </p>
+
+        <a href="https://drive.google.com/file/d/17Hvz9jrVoBKaAhO6Ah9E7udtPkXTNmzh/view" download="cv-ignacio" class="cv-button">CHECK MY CV      
+        </a>
+            
+
+        <div class="social-icons">                
+            </div>
+            <div class="social-icon">
+                <a href="https://github.com/IgnacioGamarra04" aria-label="GitHub">GH</a>
+            </div>                        
+            </div>
+            <div class="social-icon">
+                <a href="https://www.instagram.com/ignagamarra/" aria-label="Instagram">Ig</a>
+                
+            </div>
+        </div>
+
+        
+    </main>
+</body>
+</html>
